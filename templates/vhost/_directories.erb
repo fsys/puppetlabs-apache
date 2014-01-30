@@ -21,6 +21,9 @@
     <%- if directory['options'] -%>
     Options <%= Array(directory['options']).join(' ') %>
     <%- end -%>
+    <%- if directory['index_ignore'] -%>
+    IndexIgnore <%= Array(directory['index_ignore']).join(' ') %>
+    <%- end -%>
     <%- if provider == 'Directory' -%>
       <%- if directory['index_options'] -%>
     IndexOptions <%= Array(directory['index_options']).join(' ') %>
